@@ -6,17 +6,24 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "json-server": "json-server --watch data/db.json --port 5000"
   },
   "dependencies": {
+    "@prantlf/jsonlint": "^16.0.0",
+    "axios": "^1.8.1",
     "dotenv": "^16.4.7",
+    "json-server": "^1.0.0-beta.3",
     "mongoose": "^8.10.1",
     "next": "15.1.7",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-hot-toast": "^2.5.2",
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "daisyui": "^4.12.24",
     "eslint": "^9",
     "eslint-config-next": "15.1.7",
     "postcss": "^8",

@@ -34,7 +34,7 @@ export async function PUT(req,{params}){
     try {
         await DBConnect();
         const {id}= await params;
-        console.log("id:",id);
+           console.log("id:",id);
         const body = await req.json();
         const data=await Task.findByIdAndUpdate(id,body,{
             new:true,
